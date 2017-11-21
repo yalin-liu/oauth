@@ -9,3 +9,4 @@ var facebookAuth = {
       'callbackURL'     : 'http://localhost:8099/auth/facebook/callback'
 };
 ```
+Documentation of Passport can be found [here](http://www.passportjs.org).
