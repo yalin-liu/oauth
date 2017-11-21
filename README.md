@@ -1,5 +1,4 @@
-# OAuth Example [Reference]
-## Passport - Middleware for Node.js
+# Passport - Middleware for Node.js [Reference]
 1. Create a Facebook App at developer.facebook.com to obtain an **App ID** and **App Secret**
 2. Put your App ID and App Secret in the `facebookAuth` variable
 ```
