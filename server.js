@@ -30,8 +30,9 @@ passport.use(new FacebookStrategy({
     user = {};
     user['id'] = profile.id;
     user['name'] = profile.displayName;
+    user['type'] = profile.provider;  // Facebook? Google? Twitter?
     console.log('user object: ' + JSON.stringify(user));
-    return done(null,user);  // put user object into session
+    return done(null,user);  // put user object into session => req.user
   })
 );
 
@@ -75,8 +76,7 @@ app.get("/auth/facebook/callback",
 // if the user is logged in, then proceed to the request handler function,
 // else the isLoggedIn will send 401 status instead
 app.get("/content", isLoggedIn, function (req, res) {
-    res.send("Welcome, " + req.user.name +
-             "!  You have successfully logged in");
+    res.render('frontpage', {user: req.user});
 });
 
 // logout request handler, passport attaches a logout() function to the req object,
