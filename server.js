@@ -24,7 +24,7 @@ passport.use(new FacebookStrategy({
     "clientID"        : facebookAuth.clientID,
     "clientSecret"    : facebookAuth.clientSecret,
     "callbackURL"     : facebookAuth.callbackURL
-  },
+  },  
   function (token, refreshToken, profile, done) {
     console.log("Facebook Profile: " + JSON.stringify(profile));
     user = {};
@@ -45,7 +45,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// route middleware to ensure user is logged in, if it's not send 401 status
+// route middleware to ensure user is logged in
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated())
         return next();

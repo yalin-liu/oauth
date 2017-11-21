@@ -4,11 +4,13 @@
   "author": "Raymond SO <rso@ouhk.edu.hk>",
   "version": "0.0.1",
   "dependencies": {
-	  "express" : "*",
-	  "passport" : "*",
-	  "passport-facebook" : "*",
-	  "express-session" : "*"
+    "express": "*",
+    "passport": "*",
+    "passport-facebook": "*",
+    "express-session": "*"
   },
   "engine": "*",
-  "scripts": {"start": "node server"}
+  "scripts": {
+    "start": "node server"
+  }
 }
