@@ -9,4 +9,6 @@ var facebookAuth = {
       'callbackURL'     : 'http://localhost:8099/auth/facebook/callback'
 };
 ```
+   Remember to update `callbackURL` if your server is running in the cloud!
+
 Documentation of Passport can be found [here](http://www.passportjs.org).
