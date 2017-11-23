@@ -29,7 +29,7 @@ passport.use(new FacebookStrategy({
     console.log("Facebook Profile: " + JSON.stringify(profile));
     user = {};
     user['id'] = profile.id;
-    user['name'] = profile.displayName;
+    user['name'] = profile.name.givenName;
     user['type'] = profile.provider;  // Facebook? Google? Twitter?
     console.log('user object: ' + JSON.stringify(user));
     return done(null,user);  // put user object into session => req.user
