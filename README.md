@@ -1,6 +1,6 @@
 # COMPS381F - Passport, OAuth Middleware for Node.js [Reference]
 
-1. Create a Facebook App at [developer.facebook.com](developer.facebook.com) to obtain an **App ID** and **App Secret**
+1. Create a Facebook App at [developer.facebook.com](https://developer.facebook.com) to obtain an **App ID** and **App Secret**
 2. Put your App ID and App Secret into the `facebookAuth` variable
 ```
 var facebookAuth = {
