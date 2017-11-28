@@ -6,7 +6,7 @@
 
 2. Configure your newly created Facebook App
 
-![Configure your Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb00.png)
+![Configure your Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb02.png)
 
 3. Put your App ID and App Secret into the `facebookAuth` variable
 ```
