@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "description": "NodeJS Express App",
+  "description": "Use of Passport in Node.js",
   "author": "Raymond SO <rso@ouhk.edu.hk>",
   "version": "0.0.1",
   "dependencies": {

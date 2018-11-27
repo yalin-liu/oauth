@@ -26,10 +26,13 @@ passport.use(new FacebookStrategy({
     "callbackURL"     : facebookAuth.callbackURL
   },  
   function (token, refreshToken, profile, done) {
-    console.log("Facebook Profile: " + JSON.stringify(profile));
+    //console.log("Facebook Profile: " + JSON.stringify(profile));
+    console.log("Facebook Profile: ");
+    console.log(profile);
     user = {};
     user['id'] = profile.id;
-    user['name'] = profile.name.givenName;
+    //user['name'] = profile.name.givenName;
+    user['name'] = profile.displayName;
     user['type'] = profile.provider;  // Facebook? Google? Twitter?
     console.log('user object: ' + JSON.stringify(user));
     return done(null,user);  // put user object into session => req.user
