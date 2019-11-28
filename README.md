@@ -13,6 +13,9 @@
 ![Configure your Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb02.png)
 
 3. Put your App ID and App Secret into the `facebookAuth` variable
+
+![Configure your Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb03.png)
+
    ```
    var facebookAuth = {
       'clientID'        : '', // facebook App ID
