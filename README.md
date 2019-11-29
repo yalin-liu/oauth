@@ -2,7 +2,7 @@
 
 1. Create a Facebook App at [developer.facebook.com](https://developer.facebook.com) to obtain an **App ID** and **App Secret**
 
-![Create a Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb00.png)
+![Create a Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb01.png)
 
 2. Configure your newly created Facebook App.  Use the URL below as **Valid OAuth redirect URIs**
 
