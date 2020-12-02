@@ -1,8 +1,8 @@
 # COMPS381F - Passport, OAuth Middleware for Node.js [Reference]
 
-1. Create a Facebook App at [developer.facebook.com](https://developer.facebook.com) to obtain an **App ID** and **App Secret**
+1. Create a Facebook App at [developer.facebook.com](https://developer.facebook.com/apps) to obtain an **App ID** and **App Secret**
 
-![Create a Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb01.png)
+![Create a Facebook App](fb01.png)
 
 2. Configure your newly created Facebook App.  Use the URL below as **Valid OAuth redirect URIs**
 
@@ -10,11 +10,11 @@
    http://localhost:8099/auth/facebook/callback
    ```
 
-![Configure your Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb02.png)
+![Configure your Facebook App](fb02.png)
 
 3. Put your App ID and App Secret into the `facebookAuth` variable
 
-![Configure your Facebook App](https://github.com/raymondwcs/oauth/blob/master/fb03.png)
+![Configure your Facebook App](fb03.png)
 
    ```
    var facebookAuth = {
