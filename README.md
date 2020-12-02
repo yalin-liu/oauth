@@ -24,6 +24,6 @@
    };
    ```
 
-**Remember to update `callbackURL` when your server is running in the cloud!**
+**Remember to update `callbackURL` if you deploy your server to the cloud!**
 
 Documentation of Passport can be found [here](http://www.passportjs.org).
