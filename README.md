@@ -4,15 +4,7 @@
 
 ![Create a Facebook App](fb01.png)
 
-2. Configure your newly created Facebook App.  Use the URL below as **Valid OAuth redirect URIs**
-
-   ```
-   http://localhost:8099/auth/facebook/callback
-   ```
-
-![Configure your Facebook App](fb02.png)
-
-3. Put your App ID and App Secret into the `facebookAuth` variable
+2. Put your App ID and App Secret into the `facebookAuth` variable
 
 ![Configure your Facebook App](fb03.png)
 
