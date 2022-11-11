@@ -84,8 +84,12 @@ app.get("/content", isLoggedIn, function (req, res) {
 
 // logout request handler, passport attaches a logout() function to the req object,
 // and we call this to logout the user, same as destroying the data in the session.
+// https://www.passportjs.org/concepts/authentication/logout/
 app.get("/logout", function(req, res) {
-    req.logout();
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.redirect('/');
+    });
     res.send("logout was successful!");
 });
 
