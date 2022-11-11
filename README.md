@@ -6,6 +6,7 @@
 
 2. Put your App ID and App Secret into the `facebookAuth` variable
 
+![Add Callback URL - same with your server.js](fb02.png)
 ![Configure your Facebook App](fb03.png)
 
    ```
