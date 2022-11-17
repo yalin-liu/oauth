@@ -1,6 +1,6 @@
 var express             = require('express'),
     app                 = express(),
-    passport            = require('passport'),
+    passport            = require('passport'),// Use Passport Middleware
     FacebookStrategy    = require('passport-facebook').Strategy,
     session             = require('express-session');
 
@@ -11,7 +11,10 @@ var facebookAuth = {
 };
 
 var user = {};  // user object to be put in session
+
 // passport needs ability to serialize and unserialize users out of session
+// Passport uses serializeUser function to persist user data (after successful authentication) into session. 
+// Function deserializeUser is used to retrieve user data from session.
 passport.serializeUser(function (user, done) {
     done(null, user);
 });
@@ -41,6 +44,8 @@ passport.use(new FacebookStrategy({
 
 app.set('view engine', 'ejs');
 
+
+// Passport needs the following setup to save user data after authentication in the session:
 // initialize passposrt and and session for persistent login sessions
 app.use(session({
     secret: "tHiSiSasEcRetStr",
