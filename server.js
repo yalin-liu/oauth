@@ -94,8 +94,9 @@ app.get("/logout", function(req, res) {
     req.logout(function(err) {
         if (err) { return next(err); }
         res.redirect('/');
+        //res.send("logout was successful!");
     });
-    res.send("logout was successful!");
+    //res.send("logout was successful!");
 });
 
 // launch the app
